@@ -5,10 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatDialogModule } from '@angular/material/dialog';
+import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CadastroProdutoComponent
   ],
   imports: [
     BrowserModule,
