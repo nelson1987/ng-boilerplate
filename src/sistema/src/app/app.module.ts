@@ -9,6 +9,11 @@ import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.co
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import {RouterModule, Routes} from '@angular/router';
+const appRoutes: Routes = [
+  {path: 'cadastro-produto', component: CadastroProdutoComponent},
+];
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +24,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     MatDialogModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule.forRoot(
+        appRoutes, {enableTracing: true}  // <-- debugging purposes only
+        )
   ],
   providers: [
     provideAnimationsAsync()

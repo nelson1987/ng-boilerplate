@@ -229,7 +229,12 @@
       <button mat-button (click)="openDialog()">Abrir janela</button>
 
 
-      
+      <h1>Angular Router</h1>
+<nav>
+  <a routerLink="/cadastro-produto" routerLinkActive="active" ariaCurrentWhenActive="page">Cadastro Produto</a>
+  <!-- <a routerLink="/heroes" routerLinkActive="active" ariaCurrentWhenActive="page">Heroes</a> -->
+</nav>
+<router-outlet></router-outlet>
       <p>Congratulations! Your app is running. 🎉</p>
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
